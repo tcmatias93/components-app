@@ -20,7 +20,7 @@ export const menuRoutes: MenuRouter[] = [
   {
     title: "Modal",
     icon: "copy-outline",
-    name: "modal/index",
+    name: "modal",
   },
   {
     title: "InfiniteScroll",

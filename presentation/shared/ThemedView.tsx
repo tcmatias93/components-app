@@ -22,12 +22,15 @@ const ThemedView = ({
   return (
     //Esta es una opcion para el color de fondo className="bg-light-background dark:bg-dark-background"
     <View
-      style={{
-        backgroundColor: backgroundColor,
-        flex: 1,
-        paddingTop: safe ? safeArea.top : 0,
-        marginHorizontal: margin ? 10 : 0,
-      }}
+      style={[
+        {
+          backgroundColor: backgroundColor,
+          flex: 1,
+          paddingTop: safe ? safeArea.top : 0,
+          marginHorizontal: margin ? 10 : 0,
+        },
+        style,
+      ]}
       className={className}
     >
       {children}
